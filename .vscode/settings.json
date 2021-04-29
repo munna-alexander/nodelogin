@@ -1,0 +1,23 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 1433,
+            "askForPassword": true,
+            "driver": "MSSQL",
+            "name": "conn1",
+            "connectString": "Server=tcp:dtsmartaccess-sqlserver.database.windows.net,1433;Initial Catalog=DTSmartAccess-DB;Persist Security Info=False;User ID=sqladmin;Password={3p@hPWSGxStXvn4R!};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+            "connectionTimeout": 30
+        }
+    ]
+}
