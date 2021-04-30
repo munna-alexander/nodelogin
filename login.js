@@ -7,12 +7,25 @@ var username;
 var udata;
 var uudata;
 
+// var connection = mysql.createConnection({
+// 	host     : 'localhost',
+// 	user     :'root',
+// 	//port      : '1433',
+// 	password : 'Nov18@95',
+// 	database : 'nodelogin'
+// });
+
+var mysql = require('mysql');
+
 var connection = mysql.createConnection({
-	host     : 'dtsmartaccess-sqlserver.database.windows.net',
-	user     : 'sqladmin',
-	//port      : '1433',
-	password : '3p@hPWSGxStXvn4R!',
-	database : 'DTSmartAccess-DB'
+  server: "dtsmartaccess-sqlserver.database.windows.net",
+  user: "sqladmin",
+  password: "3p@hPWSGxStXvn4R!",
+  database: "DTSmartAccess-DB",
+  port:1433,
+  options: {
+    encrypt: true // Use this if you're on Windows Azure
+}
 });
 //images
 var publicDir = require('path').join(__dirname,'/public');
